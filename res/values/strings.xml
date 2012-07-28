@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">LogoPro</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">LogoPro</string>
+    <string name="button_1">SAP</string>
+    <string name="button_2">SAP</string>
+    <string name="button_3">Google</string>
+    <string name="button_4">Google</string>
+    <string name="imageView_description">Actual Logo</string>
+
+</resources>

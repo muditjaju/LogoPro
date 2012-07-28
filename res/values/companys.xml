@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_name">
+        <item >SAP</item>
+        <item >Google</item>
+        <item >Apple</item>
+        <item >Facebook</item>
+        <item >Coka Cola</item>
+        <item >VW</item>
+        <item >Audi</item>
+        <item >Logitech</item>
+        <item >Razer</item>
+        <item >British Tabako</item>
+        <item >Samsung</item>
+        <item >HTC</item>
+        <item >Intel</item>
+        <item >AMD</item>
+        <item >Nvidia</item>
+        <item >Cisco</item>
+        <item >Oracle</item>
+        <item >Xing</item>
+        <item >Bose</item>
+        <item >BMW</item>
+    </string-array>
+    <array name="company_picture">
+        <item >@drawable/sap</item>
+        <item >@drawable/google</item>
+        <item >@drawable/apple</item>
+        <item >@drawable/facebook</item>
+        <item >@drawable/cokacola</item>
+        <item >@drawable/vw</item>
+        <item >@drawable/audi</item>
+        <item >@drawable/logitech</item>
+        <item >@drawable/razer</item>
+        <item >@drawable/britishtabako</item>
+        <item >@drawable/samsung</item>
+        <item >@drawable/htc</item>
+        <item >@drawable/intel</item>
+        <item >@drawable/amd</item>
+        <item >@drawable/nvidia</item>
+        <item >@drawable/cisco</item>
+        <item >@drawable/oracle</item>
+        <item >@drawable/xing</item>
+        <item >@drawable/bose</item>
+        <item >@drawable/bmw</item>
+    </array>
+    
+</resources>
