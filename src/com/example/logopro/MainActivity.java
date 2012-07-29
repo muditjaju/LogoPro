@@ -3,7 +3,6 @@ package com.example.logopro;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import android.R;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
