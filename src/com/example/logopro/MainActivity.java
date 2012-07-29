@@ -3,6 +3,7 @@ package com.example.logopro;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import android.R;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -48,7 +49,7 @@ public class MainActivity extends Activity implements OnClickListener{
         imageView1 = (ImageView)findViewById(R.id.imageView_1);                   
         company_name = getResources().getStringArray(R.array.company_name);
         company_picture = getResources().obtainTypedArray(R.array.company_picture);
-        
+     
         selectButton[0] = (Button)findViewById(R.id.button_1);
         selectButton[1] = (Button)findViewById(R.id.button_2);
         selectButton[2] = (Button)findViewById(R.id.button_3);        
