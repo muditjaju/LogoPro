@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.TypedArray;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,7 +66,8 @@ public class MainActivity extends Activity implements OnClickListener{
         }
         Collections.shuffle(randomArray);
         
-        updateView();
+        imageView1.setImageBitmap(new BitmapFactory().decodeFile("sdcard/DCIM/Desert.jpg"));
+        //updateView();
     }
 
 	@Override
