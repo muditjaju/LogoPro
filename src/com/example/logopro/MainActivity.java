@@ -66,8 +66,16 @@ public class MainActivity extends Activity implements OnClickListener{
         }
         Collections.shuffle(randomArray);
         
+        //updateView(); //da ein Bild von der SD Karte angezeigt werden soll ist diese Zeile auskommentiert
+
+        //-----------------------
+        //TESTAREA
+        //-----------------------
+        
+        //Zeigt ein Bild auf der SD Karte an
         imageView1.setImageBitmap(new BitmapFactory().decodeFile("sdcard/DCIM/Desert.jpg"));
-        //updateView();
+        
+        
     }
 
 	@Override
@@ -98,8 +106,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		ImageView imageView;
 		@Override
 		protected String doInBackground(View... v) {
-			button = (Button)v[0];
+			button = (Button)v[0];			
 			imageView = (ImageView)v[1];
+			
 			switch (v[0].getId()){		
 			case R.id.button_1:
 				if(selectedCompanyButton == 0)
