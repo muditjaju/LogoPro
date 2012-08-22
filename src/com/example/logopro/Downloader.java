@@ -32,7 +32,7 @@ public class Downloader {
 			
 			int current = 0;
 			
-			while ((current = bis.read()) != 1) {
+			while ((current = bis.read()) != -1) {
 				baf.append((byte) current); 
 			}
 			
@@ -43,6 +43,7 @@ public class Downloader {
 			
 		} catch (Exception ex) {
 			Log.d("DOWNLOADER", ex.toString());
-		}
+		} 
+		
 	}
 }

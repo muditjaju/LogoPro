@@ -36,7 +36,9 @@ public class MainActivity extends Activity implements OnClickListener{
 	int punkte = 0;		
 	int runde = 1;
 	
+	//Objekte
 	ImageView imageView1;
+	Downloader downloader1;
 		
 	//4 Auswhl Buttons am Bildschirmboden
 	Button[] selectButton = new Button[4];
@@ -111,7 +113,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 			switch (v[0].getId()){		
 			case R.id.button_1:
-				if(selectedCompanyButton == 0)
+				if(selectedCompanyButton == 0)				
 					return "richtig";	
 				else
 					return "falsch";
@@ -144,6 +146,24 @@ public class MainActivity extends Activity implements OnClickListener{
 				updateView();
 			}
 			
+			//TO-DO hier wird testhalber eine Datei über den Downlaoder heruntergeladen
+			//dies muss in einem Thread geschehen, da man network sachen nicht direkt in der aktivity laufen
+			//lassen darf
+			Thread thread = new Thread()
+			{
+			    @Override
+			    public void run() {
+			        try {
+		    			downloader1 = new Downloader();
+		    			downloader1.downloadFromUrl("http://faatkids.de/mp3player_logo.jpg", "test.jpg");
+			        } catch (Exception e) {
+			            e.printStackTrace();
+			        }
+			    }
+			};
+
+			thread.start();
+
 			super.onPostExecute(result);
 		}
 	}
